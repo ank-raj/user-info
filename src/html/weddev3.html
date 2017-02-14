@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body onload="al()">
+	<h1> javaacript </h1>
+	<p> Please enter a number between 1 and 10</p>
+	<input id="numb" type="number"/> 
+	<button type="button" onclick="myfunction()"> Submit</button>
+	<p id="demo">ABC</p>
+<script>
+	function al(){
+		alert("calling onload mode....")
+	}
+
+	function myfunction(){
+		var x,text;
+		x=document.getElementById("numb").value;
+		alert(x);
+	 	console.log("xxxx........."+x);
+		if (isNaN(x) || x<1 || x>10){
+			text="input not valid";
+		} else{
+	    	text="input OK";
+	    }
+	    document.getElementById("demo").innerText=text;
+	    var age=10;
+	    var age1=20;
+	    var fullage= age+ age1;
+	    alert("full age----"+fullage);
+	    console.log("fullage----" + full age);
+
+	    var name="abc";
+	    var name1="def";
+	    var finalValue;
+
+	    finalValue= name+name1;
+	    alert("final value...."+finalValue);
+	    console.log("final value----" +finalValue);
+	}
+</script>
+</body>
+</html>

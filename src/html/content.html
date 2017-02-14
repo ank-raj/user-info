@@ -1,0 +1,32 @@
+<form id="frmcontact" name="frmcontact" action="" method="post" onsubmit="return validateform();">
+          <div class="leftcol_container noBg">
+            <h3>Request A Demo</h3>
+            <p>Please enter your details below.</p>
+            <div class="signup_email txtBoxCont">
+              <input name="Name" onblur="$(this).parent().css('border','none');" id="name" type="text" value="Enter Name..." maxlength="100" title="Enter Name" class="textboxes" onkeypress="return textsonly(event);">
+            </div>
+            <div class="signup_email txtBoxCont">
+              <input name="Email" onblur="$(this).parent().css('border','none');" id="email" type="text" value="Enter Email..." maxlength="100" title="Enter Email" class="textboxes">
+            </div>
+            <div class="signup_email txtBoxCont">
+              <input name="Phone" onblur="$(this).parent().css('border','none');" id="phone" type="text" value="Enter Phone..." maxlength="100" title="Enter Phone" class="textboxes" onkeypress="return numberonly(event);">
+            </div>
+            <div class="signup_email txtBoxCont">
+              <input name="City" onblur="$(this).parent().css('border','none');" id="city" type="text" value="Enter City..." maxlength="100" title="Enter City" class="textboxes" onkeypress="return textsonly(event);">
+            </div>
+            <div class="signup_email txtBoxCont">
+              <input name="Technology" onblur="$(this).parent().css('border','none');" id="tech" type="text" value="Enter Techonology..." maxlength="100" title="Enter Techonology" class="textboxes">
+            </div>
+            <div class="signup_name txtBoxCont">
+              <input name="Country" onblur="$(this).parent().css('border','none');" id="country" type="text" value="Enter Captcha" title="Enter Beside Code" class="textboxes signup_name">
+            </div>
+            <div style="float:right; margin-right:2px; width:66px; height:30px; text-align:center;padding-top:7px;">
+			<span id="captchar" style="font-size: 18px; background-image: url(http://www.h2kinfosys.com/img/captcha-bg.jpg); font-weight: bold; letter-spacing: 0.2em;">dcf55</span> <input id="hiddencaptchar" name="captchahintr" value="dcf55" type="hidden">
+			</div>
+            <div class="clear"></div>
+            <div class="signup_btn">
+            <input type="submit" name="submitRequest" value="Submit Request" class="submitRequest">
+            	<div class="clear"></div>
+            </div>
+          </div>
+		  </form>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+	<style>
+	div{
+		background-color:coral;
+		border:3px solid;
+		padding:10px;
+
+	}
+</style>
+</head>
+<html>
+<body>
+<p>this example uses the addEventListener() method to execute a function when user clickes on a button.</p>
+
+<button id="myBtn007">Try Me007</button>
+<br>
+<p>This example uses the addEventListener() method to add many events on the same button.</p>
+
+<button id="myBtn" mouseOver> Try it1 (myBtn) </button>
+<p id="demoA11"> aaa</p>
+
+<br>	
+
+<p>This example uses the addEventListener() method on the window object.</p>
+
+<p> Try resizing this browser window to trigger the "resize" event handler.</p>
+
+<p id="demoResize">AAA</p>
+<br>
+
+<p>This examples demostrate how to pass parametervalues when using the addEventListener()method.</p>
+
+<p>Click the button to perform calculation.</p>
+
+<button id="myBtnCal"> Try it2 </button>
+
+<p id="demoCal">BBB (demoCal)</p>
+<br>
+<div id="myDiv">
+	<p id="myP"> myP Click this paragragh, Im Capturing.</p>
+</div>
+<script>
+/*document.getElementById("myBtn007").addEventListener("click",myFunction007  );
+
+function myFunction007(){
+	alert("hello world");
+}*/
+
+/*var x= document.getElementById("myBtn");
+x.addEventListener("mouseover", myFunction001);
+x.addEventListener("click", mySecondFunction001);
+x.addEventListener("mouseout" , myThirdFunction001);
+
+function myFunction001(){
+	document.getElementById("demoA11").innerHTML="Mouse over!<br>";
+}
+
+function mySecondFunction001(){
+	document.getElementById("demoA11").innerHTML="Clicked!<br>";
+}
+
+function myThirdFunction001(){
+	document.getElementById("demoA11").innerHTML="Moused out!<br>";
+
+}
+
+window.addEventListener("resize",function(){
+	document.getElementById("demoResize").innerHTML= Math.random();
+});*/
+
+/*var p1=5;
+var p2=7;
+document.getElementById("myBtnCal").addEventListener("click",function(){
+	myFunction(p1,p2);
+});
+
+function myFunction(p1,p2) {
+	var result= p1*p2 ;
+	document.getElementById("demoCal").innerHTML=result;
+}*/
+
+document.getElementById("myP").addEventListener("click",function(){
+	alert("you clicked the P element");
+},false);
+
+document.getElementById("myDiv").addEventListener("click",function(){
+	alert("you clicked the Div element");
+},false);
+
+</script>
+</body>
+</html>

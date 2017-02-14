@@ -1,0 +1,27 @@
+
+<html>
+  <head>
+    <title>FFill User Details</title>
+    <link rel="stylesheet" type="text/css" href="../css/login.css" />
+    <script src="../js/login.js"></script>
+  </head>
+  <body onload="initUserInfo();">
+  <div id="login_info" name="login_info">
+   <div > Hello <span id="printingUserName"></span> </div>
+
+    <select id="country" name="country" onclick="updateList();">
+      <option value="country" selected disabled hidden>--Select Country--</option>
+      <option value="india" >India</option>
+      <option value="usa" >USA</option>
+      <option value="china" >China </option>
+      <option value="uk" >UK </option>
+      <option value="uae" >UAE </option>
+    </select>
+  </div>
+  <div id="back_button_c" name="back_button_c">
+        <span class="back_button"><button type="button" onclick="goBack();" > Back </button></span>
+      </div>
+
+   </body>
+  
+</html>

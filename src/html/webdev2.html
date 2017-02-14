@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<script>
+function myfunction(){
+	alert("calling my function....");
+	var dt = new Date();
+	alert("Current date...."+dt);
+
+	   var x= document.getElementByName('demo');
+	   x.style.fontSize="25px";
+	   x.style.color="red";
+
+	   var y= document.getElementById('demo1');
+	   y.style.fontSize="50px";
+	   y.style.color="green";
+
+}
+	</script>
+</head>
+<body>
+	<h1> javascript </h1>
+	<p name="demo"> javascript is useful </p>
+	<div id="demo1"> by div tag change the element....</div>
+	<br>
+	<table>
+		<tr>
+			<td><input type="text" id="textval" value="madhu...."></td>
+		</tr>
+		</table>
+		<br>
+		<input type="button" value="james" onclick="myfunction()"> click me!</input>	
+	</body>
+	</html>

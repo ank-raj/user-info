@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Iframe Demo</title>
+    <link rel="stylesheet" type="text/css" href="../css/login.css" />
+    <script src="../js/login.js"></script>
+  </head>
+  <body onload="elementLoad('body', 'html');">
+  <div id="login_page" name="login_page" class="login_page_className" >
+    <form action="" id="loginForm" >      
+      <div id="user_name" name="user_name">
+        <span class="login_info_label">Username:</span>
+        <span class="login_val"> <input type="text" maxlength="10" placeholder="Enter username" name="usernam" id="usernam"></span>
+      </div> </br>
+      <div id="password" name="password">
+        <span class="login_info_label">Password:</span> 
+        <span class="login_val"> <input type="password" placeholder="Enter Password" name="psw" id="psw"></span>
+      </div> </br>
+      <div id="submit_reset" name="submit_reset">
+        <span class="button_submit"><button type="button" onclick="buttonEvent('login');" >Login</button></span>
+        <span class="button_submit"> <button type="reset" >Reset</button></span>
+      </div>
+   </form>
+  </div>
+
+  </body>
+  
+</html>

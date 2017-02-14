@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+	function changeContent(){
+		alert("Calling changeContent() method...");
+		//alert("loading....1111");
+		document.getElementById('demo').innerHTML="Content change by clicking me...111";
+		//alert("loading....2222");
+		//document.getElementById('demo').innerHTML="Content change by clicking me...222";
+	}
+
+	function validateText(){
+		alert("Calling validateText() method");
+		//document.getElementById('userName').innerText="Ankita Srivastava...111";
+		document.getElementById('userName').value="Ankita Kumari...111";
+	}
+	</script>
+</head>
+	<body>
+	<p id="demo"> javascript can change html....</p>
+
+	<button onclick="changeContent()"> Click me </button>
+	<!--<button onclick="document.getElementById('demo').innerHTML='Content change by clicking me'"> Click me </button>-->
+	<br><br><br><br>
+	<input type="text" value="Ankita" id="userName" name="">
+	<button onclick="validateText()">Click User Name </button>
+
+</body>
+</html>
